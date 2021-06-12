@@ -1,0 +1,21 @@
+{% extends 'miniblog/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block content %}
+<div class="col-sm-2"></div>
+<div class="col-sm-8">
+    <h3 class="my-5">Home</h3>
+{% for x in post|slice:"::-1" %}
+    <div class="jumbo">
+        <div class="container">
+            <h1 class=""><b>{{x.title}}</b></h1>
+            <p class="lead">{{x.desc}}</p>
+            <p class="lead">Post by -{{x.uname}}</p>
+            <p>Post Time -{{x.time}}</p>
+
+        </div>
+    </div></br>
+    {% endfor %}
+</div>
+
+{% endblock content %}

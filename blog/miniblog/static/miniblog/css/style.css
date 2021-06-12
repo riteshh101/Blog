@@ -1,0 +1,12 @@
+body{
+color: antiquewhite;
+}
+
+.jumbo
+{
+border:2px solid white;
+background-color: rgb(83, 81, 81);
+}
+.form-control{
+background-color:rgb(177, 168, 168);
+}
